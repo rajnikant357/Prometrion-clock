@@ -1,0 +1,8 @@
+# Robots.txt for Online clock (Prometrion)
+# Production Domain: https://www.clock.prometrion.com/
+
+User-agent: *
+Allow: /
+
+# Sitemap index
+Sitemap: https://www.clock.prometrion.com/sitemap.xml

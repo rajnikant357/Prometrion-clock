@@ -1,0 +1,31 @@
+{
+  "name": "online-clock",
+  "version": "1.0.0",
+  "description": "Online clock — A precision digital clock with dark and light theme toggle across global timezones. A Product of Prometrion.",
+  "homepage": "https://www.clock.prometrion.com/",
+  "scripts": {
+    "dev": "serve .",
+    "start": "serve ."
+  },
+  "keywords": [
+    "online-clock",
+    "digital-clock",
+    "clock",
+    "internet-clock",
+    "clock-online",
+    "web-clock",
+    "clock-website",
+    "world-clock",
+    "prometrion",
+    "rajnikant-gaurav",
+    "fullscreen-clock",
+    "dark-mode",
+    "light-mode"
+  ],
+  "author": "Rajnikant Gaurav <https://www.rajnikantg.in/>",
+  "publisher": "Prometrion <https://www.prometrion.com/>",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

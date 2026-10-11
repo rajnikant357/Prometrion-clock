@@ -1,0 +1,60 @@
+{
+  "id": "com.prometrion.clock",
+  "name": "Online clock — Prometrion",
+  "short_name": "Online clock",
+  "description": "Free precision online digital clock with real-time world timezones, dark and light theme toggle, fullscreen ambient mode, and hourly chime. 100% private.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "lang": "en-US",
+  "categories": [
+    "utilities",
+    "productivity",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "public/Prometrion%20logo2.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "public/Prometrion%20logo2.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Fullscreen Clock",
+      "short_name": "Fullscreen",
+      "description": "Launch Online clock in ambient fullscreen view",
+      "url": "/?mode=fullscreen",
+      "icons": [
+        {
+          "src": "public/Prometrion%20logo2.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "World Timezones",
+      "short_name": "Timezones",
+      "description": "View global reference timezones",
+      "url": "/#moreDetails",
+      "icons": [
+        {
+          "src": "public/Prometrion%20logo2.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
