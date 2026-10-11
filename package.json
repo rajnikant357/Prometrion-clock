@@ -4,8 +4,10 @@
   "description": "Online clock — A precision digital clock with dark and light theme toggle across global timezones. A Product of Prometrion.",
   "homepage": "https://www.clock.prometrion.com/",
   "scripts": {
+    "build": "node build.js",
     "dev": "serve .",
-    "start": "serve ."
+    "start": "serve dist",
+    "preview": "serve dist"
   },
   "keywords": [
     "online-clock",

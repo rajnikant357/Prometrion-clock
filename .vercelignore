@@ -1,0 +1,5 @@
+# Vercel Deployment Ignore
+.git
+.gitignore
+.vercelignore
+README.md

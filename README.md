@@ -97,18 +97,63 @@ Copyright:         © 2026 Prometrion. All rights reserved.
 
 ---
 
-## 🚀 Running Locally
+## 🚀 Building & Running Locally
 
 ```bash
-# Using npx (no install required)
-npx serve .
-
-# Or using npm
+# Development server (serves root)
 npm run dev
+
+# Production build (compiles and packages into dist/)
+npm run build
+
+# Preview production build from dist/
+npm run preview
+# or
+npm start
 ```
 
 ---
 
-## ☁️ Deployment
+## ☁️ Deploying to Vercel
 
-Configured for zero-config production deployment on [Vercel](https://vercel.com/) with caching, MIME type headers, and security rules in [`vercel.json`](vercel.json).
+Online clock is configured for automated, high-performance deployment on [Vercel](https://vercel.com/):
+
+### Option 1: Vercel Git Integration (Recommended)
+1. Push this repository to GitHub, GitLab, or Bitbucket.
+2. Import the project in your [Vercel Dashboard](https://vercel.com/new).
+3. Vercel automatically detects the build configuration in [`vercel.json`](vercel.json):
+   - **Build Command**: `node build.js` (or `npm run build`)
+   - **Output Directory**: `dist`
+4. Click **Deploy**. Vercel will build the `dist/` directory and deploy it with production headers, HTTP/3, and edge CDN distribution.
+
+### Option 2: Vercel CLI
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy directly
+vercel
+
+# Deploy to production domain (www.clock.prometrion.com)
+vercel --prod
+```
+
+### 📁 Production `dist/` Directory Structure
+```text
+dist/
+├── index.html                    # SEO & OpenGraph optimized application shell
+├── styles.css                    # Vercel monochrome design tokens & fluid layouts
+├── app.js                        # Drift-free RAF clock engine & user controls
+├── app-info.js                   # Universal Prometrion AppInfo branding system
+├── manifest.json                 # PWA standalone web app manifest
+├── robots.txt                    # Search crawler instructions & sitemap link
+├── sitemap.xml                   # Canonical XML sitemap
+├── favicon.ico                   # Browser favicon
+├── prometrion-logo.png           # 500x500 high-resolution brand asset
+├── prometrion-logo.svg           # Scalable theme-aware vector asset
+├── vercel.json                   # Edge headers & caching rules
+└── public/                       # Static public assets (icons & logos)
+    ├── Prometrion logo2.png
+    ├── prometrion-logo.png
+    └── prometrion-logo.svg
+```

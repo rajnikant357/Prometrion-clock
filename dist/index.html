@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Primary Meta Tags -->
+  <title>Online clock — Precision Digital Clock | Prometrion</title>
+  <meta name="title" content="Online clock — Precision Digital Clock | Prometrion">
+  <meta name="description" content="Free precision online clock with dark & light themes, instant device timezone auto-detection, world timezones (UTC, EDT, BST, IST, JST, AEDT), fullscreen ambient mode, and hourly chime. 100% private with zero data collection. A Product of Prometrion.">
+  <meta name="keywords" content="online clock, digital clock, clock, internet clock, clock online, web clock, clock website, accurate digital clock, full screen clock, ambient clock, world clock, atomic clock online, desktop clock, Prometrion, Rajnikant Gaurav">
+  <meta name="author" content="Rajnikant Gaurav">
+  <meta name="publisher" content="Prometrion">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://www.clock.prometrion.com/">
+
+  <!-- Geo Meta Tags for Global & Regional Time Search Visibility -->
+  <meta name="geo.region" content="US-NY;GB-LND;IN-DL;JP-13;AU-NSW">
+  <meta name="geo.placename" content="Global World Clock (UTC, New York, London, New Delhi, Tokyo, Sydney)">
+
+  <!-- Open Graph / Facebook / LinkedIn / Discord -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Online clock — Prometrion">
+  <meta property="og:url" content="https://www.clock.prometrion.com/">
+  <meta property="og:title" content="Online clock — Precision Digital Clock | Prometrion">
+  <meta property="og:description" content="Ultra-accurate digital clock with dark & light themes, world timezones (UTC, EDT, BST, IST, JST, AEDT), fullscreen mode, and hourly chime. 100% client-side & private.">
+  <meta property="og:image" content="https://www.clock.prometrion.com/public/Prometrion%20logo2.png">
+  <meta property="og:image:secure_url" content="https://www.clock.prometrion.com/public/Prometrion%20logo2.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="Online clock by Prometrion Logo">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:locale:alternate" content="en_IN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_AU">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" content="clock.prometrion.com">
+  <meta name="twitter:url" content="https://www.clock.prometrion.com/">
+  <meta name="twitter:title" content="Online clock — Precision Digital Clock | Prometrion">
+  <meta name="twitter:description" content="Free precision digital clock with instant timezone detection, dark & light themes, fullscreen mode, and zero data tracking.">
+  <meta name="twitter:image" content="https://www.clock.prometrion.com/public/Prometrion%20logo2.png">
+  <meta name="twitter:image:alt" content="Online clock by Prometrion Logo">
+
+  <!-- Mobile & PWA Device Integration -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Online clock">
+  <meta name="application-name" content="Online clock">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileImage" content="public/Prometrion%20logo2.png">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Dynamic Theme Color for Mobile Browser Chrome -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+
+  <!-- Icons & Web App Manifest -->
+  <link rel="icon" type="image/png" href="public/Prometrion%20logo2.png">
+  <link rel="apple-touch-icon" href="public/Prometrion%20logo2.png">
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Modern color-scheme standard -->
+  <meta name="color-scheme" content="light dark">
+
+  <!-- FOUC prevention script: auto-detect system theme if no preference stored -->
+  <script>
+    (function() {
+      try {
+        let theme = localStorage.getItem("color-scheme");
+        if (theme !== "dark" && theme !== "light") {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        const meta = document.querySelector('meta[name="color-scheme"]');
+        meta.content = theme;
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Structured Data: Comprehensive Schema.org Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.clock.prometrion.com/#website",
+        "url": "https://www.clock.prometrion.com/",
+        "name": "Online clock — Prometrion",
+        "description": "Free precision online digital clock with real-time world timezones, dark & light theme toggle, fullscreen mode, and hourly audio chime.",
+        "publisher": {
+          "@id": "https://www.prometrion.com/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://www.clock.prometrion.com/#webapp",
+        "name": "Online clock",
+        "alternateName": "Prometrion Online Digital Clock",
+        "url": "https://www.clock.prometrion.com/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All (Web, Android, iOS, Windows, macOS, Linux)",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Free precision online digital clock with real-time world timezones, dark and light theme toggle, fullscreen ambient mode, day elapsed progress, and hourly audio chime.",
+        "creator": {
+          "@id": "https://www.rajnikantg.in/#person"
+        },
+        "publisher": {
+          "@id": "https://www.prometrion.com/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Drift-free real-time digital clock",
+          "Automatic device timezone identification",
+          "Global timezones: UTC, New York, London, New Delhi, Tokyo, Sydney",
+          "2-mode dark and light theme toggle with system auto-detection",
+          "12-hour and 24-hour format support with AM/PM indicator",
+          "Distraction-free ambient fullscreen mode",
+          "Synthesized Web Audio hourly chime",
+          "Zero data tracking and complete client-side privacy"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.prometrion.com/#organization",
+        "name": "Prometrion",
+        "url": "https://www.prometrion.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.clock.prometrion.com/public/Prometrion%20logo2.png",
+          "width": 500,
+          "height": 500
+        },
+        "founder": {
+          "@id": "https://www.rajnikantg.in/#person"
+        },
+        "sameAs": [
+          "https://www.prometrion.com/"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.rajnikantg.in/#person",
+        "name": "Rajnikant Gaurav",
+        "url": "https://www.rajnikantg.in/",
+        "jobTitle": "Software Developer & Founder",
+        "sameAs": [
+          "https://www.rajnikantg.in/"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.clock.prometrion.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Prometrion",
+            "item": "https://www.prometrion.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Online clock",
+            "item": "https://www.clock.prometrion.com/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage Schema for Search Engine Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I see live time in full screen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. On Online clock (www.clock.prometrion.com), click the fullscreen button in the upper-right corner of the clock card or press the F key on your keyboard. The interface expands into an immersive full-screen display showing large, live-updating hours, minutes, seconds, and the current date while automatically hiding all distractions and toolbars."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to display a digital clock on screen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To display a digital clock on your screen, navigate to www.clock.prometrion.com in any modern web browser. The clock instantly renders live, drift-free local time with no download required, and can be expanded into fullscreen or pinned in a tab."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I make my clock big on my home screen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can install Online clock as a Progressive Web App (PWA). On Android, open www.clock.prometrion.com in Chrome, tap the menu (⋮), and select 'Install app' or 'Add to Home screen'. On iPhone or iPad, tap Share in Safari and select 'Add to Home Screen'. Open it from your home screen for an oversized, full-screen digital clock."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to make a timer full screen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To view time in full screen on Online clock, press F on your keyboard or click the fullscreen icon on the clock card. On mobile or tablet devices, tap the fullscreen icon or rotate your device to landscape mode for an uninterrupted full-screen experience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a full screen clock app for Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Online clock is fully optimized as an installable PWA for Android. Visit www.clock.prometrion.com in Chrome, tap 'Install app', and launch it directly from your Android home screen or app drawer for a lightweight, ad-free full-screen clock with Dark and Light themes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I display a clock on my screen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open www.clock.prometrion.com in your web browser. You can pin the browser tab, place it side-by-side with other apps, or press F to make it full screen. It supports 12H/24H formats, seconds toggling, and 6 global reference timezones."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to change clock display on screen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the quick controls toolbar below the clock: toggle 12H / 24H by clicking the format buttons or pressing Space, toggle Seconds display with the switch or pressing S, switch between Light and Dark themes with the sun/moon button or pressing T, and select different timezones using the timezone chips."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I display a clock on my PC screen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open www.clock.prometrion.com on your Windows, Mac, or Linux computer. For a full-screen ambient display, press F (or F11 in your browser). You can also click the install icon in your browser address bar to install it as a standalone desktop app."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a digital clock display?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A digital clock display is an electronic visual representation of time that displays time numerically (such as 12:45:00 PM) rather than through rotating physical hands on a dial. Online clock uses tabular monospaced Geist Mono typography to ensure numerals remain stable without digit shaking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I find a digital clock online with seconds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Visit Online clock at www.clock.prometrion.com, which features a live, millisecond-accurate seconds display separated by pulsing colons. You can easily toggle seconds on or off anytime using the Seconds switch or by pressing S on your keyboard."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best full-screen timer for studying?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Online clock is ideal for study and focus sessions. It features a clean, high-contrast monochrome design based on Vercel aesthetics, eliminates all banner ads and trackers, includes an optional hourly chime, tracks the percentage of day elapsed, and expands into a distraction-free fullscreen view with a single keypress (F)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a large digital countdown clock?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A large digital clock or countdown timer displays hours, minutes, and seconds in oversized typography visible across a room. Online clock functions as an ambient large digital clock with a Day Elapsed progress meter that tracks the percentage of the 24-hour cycle completed in real time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I find a full screen online time display?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Visit www.clock.prometrion.com and press F or click the fullscreen icon. It provides an oversized full-screen online time display with zero ads, automatic timezone detection, and clean aesthetic typography suitable for secondary monitors, TV dashboards, and desk docks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to show digital clock on screen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Navigate to www.clock.prometrion.com in any modern web browser on your computer, tablet, or phone. The clock immediately displays your local time without requiring sign-in or configuration. You can customize between 12-hour AM/PM and 24-hour military time, show or hide seconds, and switch themes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to get a clock to display seconds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "On Online clock (www.clock.prometrion.com), seconds are displayed by default in a dedicated box. You can toggle the seconds display on or off at any time by pressing the S key on your keyboard or by clicking the 'Seconds' toggle switch in the toolbar beneath the clock face."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes this online clock more accurate than standard web timers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unlike standard web clocks that rely on setInterval and accumulate timing drift from browser thread delays, Online clock runs on a requestAnimationFrame loop that queries your hardware clock and NTP-synchronized operating system time directly on every frame."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this digital web clock work offline without an internet connection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Online clock executes 100% client-side inside your browser sandbox. Once loaded, all time calculations, timezone conversions, and audio chime synthesizers continue functioning without needing an active internet connection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Online clock automatically identify my device timezone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The clock utilizes the native Intl.DateTimeFormat().resolvedOptions().timeZone Web API to identify your system timezone automatically upon arrival, with zero manual input required and without accessing your device location or IP address."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Online clock track or collect user data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Online clock has a strict zero data collection policy. It uses no cookies, no tracking scripts, no analytics beacons, and no telemetry. All computations remain strictly private inside your local browser session."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who developed Online clock and what is Prometrion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Online clock is created by Rajnikant Gaurav (rajnikantg.in) and published by Prometrion (prometrion.com), a technology brand creating lightweight, accessible, and high-performance digital tools."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Geist & Geist Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient background glow and dots -->
+  <div class="bg-grid-pattern" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <div class="app-container">
+    <!-- Header with Prometrion Brand & Theme Toggle -->
+    <header class="app-header">
+      <div class="header-brand">
+        <!-- Prometrion Logo from public folder -->
+        <div class="prometrion-logo-wrapper" aria-label="Prometrion logo">
+          <img src="public/Prometrion%20logo2.png" alt="Prometrion Logo" class="prometrion-logo-img" width="24" height="24">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Online clock</span>
+          <span class="brand-badge">
+            <span class="badge-dot"></span>
+            LIVE
+          </span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- 2-Mode Segmented Theme Switcher Control (Light & Dark, Icons Only) -->
+        <div class="theme-switch-container">
+          <div class="theme-segmented-control" role="radiogroup" aria-label="Theme mode">
+            <div class="theme-pill-indicator" id="themePillIndicator" aria-hidden="true"></div>
+            
+            <button 
+              type="button" 
+              class="theme-btn" 
+              id="themeLightBtn" 
+              role="radio" 
+              aria-checked="false" 
+              data-theme-value="light"
+              title="Light mode"
+              aria-label="Switch to light mode">
+              <!-- Sun SVG Icon -->
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
+
+            <button 
+              type="button" 
+              class="theme-btn" 
+              id="themeDarkBtn" 
+              role="radio" 
+              aria-checked="false" 
+              data-theme-value="dark"
+              title="Dark mode"
+              aria-label="Switch to dark mode">
+              <!-- Moon SVG Icon -->
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Clock Surface Card -->
+    <main class="clock-main">
+      <div class="clock-card" id="clockCard">
+        <!-- Top Status Bar inside Card -->
+        <div class="card-meta-bar">
+          <div class="meta-tag" id="timezoneBadge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span id="timezoneText">UTC+00:00</span>
+          </div>
+
+          <div class="meta-actions">
+            <button type="button" class="icon-button" id="fullscreenBtn" title="Toggle fullscreen (F)" aria-label="Toggle fullscreen">
+              <svg id="fullscreenIcon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Clock Face Primary Display -->
+        <div class="clock-display" aria-live="off">
+          <!-- Hours -->
+          <div class="time-digit-block">
+            <div class="digit-box" id="hoursBox">
+              <span class="digit-value" id="hoursVal">00</span>
+            </div>
+            <span class="digit-label">HOURS</span>
+          </div>
+
+          <!-- Pulsing Separator -->
+          <div class="time-separator" aria-hidden="true">:</div>
+
+          <!-- Minutes -->
+          <div class="time-digit-block">
+            <div class="digit-box" id="minutesBox">
+              <span class="digit-value" id="minutesVal">00</span>
+            </div>
+            <span class="digit-label">MINUTES</span>
+          </div>
+
+          <!-- Seconds (Collapsible / Toggleable) -->
+          <div class="time-separator seconds-item" aria-hidden="true">:</div>
+
+          <div class="time-digit-block seconds-item">
+            <div class="digit-box" id="secondsBox">
+              <span class="digit-value" id="secondsVal">00</span>
+            </div>
+            <span class="digit-label">SECONDS</span>
+          </div>
+
+          <!-- Pulsing Separator for Period -->
+          <div class="time-separator period-item" aria-hidden="true">:</div>
+
+          <!-- Period Indicator (AM / PM) for 12h mode -->
+          <div class="time-digit-block period-item" id="periodContainer">
+            <div class="digit-box" id="periodBox">
+              <span class="digit-value" id="periodVal">AM</span>
+            </div>
+            <span class="digit-label">PERIOD</span>
+          </div>
+        </div>
+
+        <!-- Date String Display -->
+        <div class="date-display">
+          <div class="calendar-icon" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <span class="full-date-text" id="fullDateText">Loading date...</span>
+          <span class="week-number-badge" id="weekNumberText">W41</span>
+        </div>
+
+        <!-- Day Completion Progress Meter -->
+        <div class="progress-section">
+          <div class="progress-header">
+            <span class="progress-title">Day Elapsed</span>
+            <span class="progress-percent" id="dayPercentText">0.0%</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" id="dayProgressBar"></div>
+          </div>
+        </div>
+
+        <!-- World Time Quick Chips -->
+        <div class="world-time-section">
+          <span class="world-time-label">Timezones:</span>
+          <div class="tz-chips-group" role="tablist" aria-label="Select timezone">
+            <button type="button" class="tz-chip active" data-tz="UTC" data-name="Coordinated Universal Time (UTC)" role="tab" aria-selected="true">UTC</button>
+            <button type="button" class="tz-chip" data-tz="America/New_York" data-name="New York (EDT)" role="tab" aria-selected="false">New York (EDT)</button>
+            <button type="button" class="tz-chip" data-tz="Europe/London" data-name="London (BST)" role="tab" aria-selected="false">London (BST)</button>
+            <button type="button" class="tz-chip" data-tz="Asia/Kolkata" data-name="New Delhi / IST" role="tab" aria-selected="false">New Delhi / IST</button>
+            <button type="button" class="tz-chip" data-tz="Asia/Tokyo" data-name="Tokyo (JST)" role="tab" aria-selected="false">Tokyo (JST)</button>
+            <button type="button" class="tz-chip" data-tz="Australia/Sydney" data-name="Sydney (AEDT)" role="tab" aria-selected="false">Sydney (AEDT)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Control Action Bar -->
+      <section class="controls-toolbar" aria-label="Clock configuration">
+        <!-- 12H / 24H Toggle Switch -->
+        <div class="control-group">
+          <span class="control-label">Format:</span>
+          <div class="segmented-mini">
+            <button type="button" class="mini-btn active" id="btn12h" data-format="12">12H</button>
+            <button type="button" class="mini-btn" id="btn24h" data-format="24">24H</button>
+          </div>
+        </div>
+
+        <!-- Seconds Display Toggle -->
+        <div class="control-group">
+          <span class="control-label">Seconds:</span>
+          <button type="button" class="toggle-switch active" id="toggleSecondsBtn" aria-pressed="true">
+            <span class="switch-handle"></span>
+          </button>
+        </div>
+
+        <!-- Subtle Audio Chime Toggle -->
+        <div class="control-group">
+          <span class="control-label">Hour Chime:</span>
+          <button type="button" class="toggle-switch" id="toggleChimeBtn" aria-pressed="false" title="Play gentle chime on the hour">
+            <span class="switch-handle"></span>
+          </button>
+        </div>
+
+        <!-- Keyboard Shortcuts Helper -->
+        <div class="control-group shortcuts-hint">
+          <span class="kbd-badge"><kbd>F</kbd> Fullscreen</span>
+          <span class="kbd-badge"><kbd>T</kbd> Theme</span>
+          <span class="kbd-badge"><kbd>Space</kbd> 12/24H</span>
+          <span class="kbd-badge"><kbd>A</kbd> About</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Standard Prometrion Universal Branding Footer -->
+    <footer class="app-footer">
+      <div class="footer-branding" id="footerBranding">
+        <p class="brand-attribution">
+          A Product of <a href="https://www.prometrion.com/" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>Prometrion</strong></a>
+        </p>
+        <p class="dev-attribution">
+          Built with 💻 & ☕. By <a href="https://www.rajnikantg.in/" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>Rajnikant Gaurav</strong></a>
+        </p>
+      </div>
+      <div class="footer-right">
+        <button type="button" class="footer-about-link" id="footerAboutBtn">About</button>
+        <span class="footer-separator">•</span>
+        <a href="#knowledgeScreen" class="footer-details-link" id="footerExploreLink">Guide & FAQ ↓</a>
+        <span class="footer-separator">•</span>
+        <span class="footer-status" id="activeThemeInfo">System theme</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Screen revealed when scrolled all the way beneath the footer -->
+  <section class="knowledge-screen" id="knowledgeScreen" aria-label="Online clock Documentation, Features, FAQ, and Privacy Policy">
+    <div class="knowledge-container">
+      
+      <!-- Section 1: Introduction & Identity -->
+      <div class="knowledge-hero">
+        <div class="knowledge-badges">
+          <span class="badge-pill">PRECISION TIMING</span>
+          <span class="badge-pill">100% PRIVATE</span>
+          <span class="badge-pill">GLOBAL TIMEZONES</span>
+        </div>
+        <h1 class="knowledge-main-title">Online clock — Precision Digital Clock Engine</h1>
+        <p class="knowledge-lead">
+          <strong>Online clock</strong> (<a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a>) is an ultra-accurate, distraction-free <strong>digital clock</strong> and <strong>internet clock</strong> engineered by <a href="https://www.rajnikantg.in/" target="_blank" rel="noopener noreferrer" class="seo-link">Rajnikant Gaurav</a> as an official product of <a href="https://www.prometrion.com/" target="_blank" rel="noopener noreferrer" class="seo-link">Prometrion</a>. Built for individuals and teams needing reliable reference time across the globe, this <strong>clock website</strong> delivers sub-millisecond precision, native operating system alignment, zero battery waste, and complete confidentiality.
+        </p>
+        <div class="knowledge-action-row">
+          <button type="button" class="knowledge-about-btn" id="seoAboutTrigger">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <span>Open About Application Profile</span>
+          </button>
+          <a href="#faqSection" class="knowledge-secondary-btn">Jump to FAQ</a>
+          <a href="#privacySection" class="knowledge-secondary-btn">Privacy Policy</a>
+        </div>
+      </div>
+
+      <!-- Section 2: How Online Clock Works (Architecture) -->
+      <div class="knowledge-block" id="howItWorksSection">
+        <div class="block-header">
+          <span class="block-tag">ARCHITECTURE</span>
+          <h2 class="block-title">How Online clock Works</h2>
+          <p class="block-subtitle">State-of-the-art web technology for uncompromising accuracy and smoothness.</p>
+        </div>
+
+        <div class="knowledge-grid">
+          <article class="feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="card-title">Drift-Free Hardware Clock Sync</h3>
+            <p class="card-text">
+              Conventional web timers rely on <code>setInterval</code>, which accumulates timing drift as browsers throttle background execution. Online clock utilizes a continuous <code>requestAnimationFrame</code> loop coupled with the client's high-resolution performance timer. It samples the hardware crystal oscillator every visual frame, synchronizing seamlessly with NTP-governed operating system clocks.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="card-title">Automated Geo & Timezone Engine</h3>
+            <p class="card-text">
+              Powered by ECMAScript Internationalization standards (<code>Intl.DateTimeFormat</code>) and the global IANA Time Zone Database, Online clock automatically detects your local timezone upon arrival. You can also jump between major global hubs including Coordinated Universal Time (UTC), New York (EDT), London (BST), New Delhi (IST), Tokyo (JST), and Sydney (AEDT) with instant Daylight Saving Time adjustments.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </div>
+            <h3 class="card-title">Bimodal System-Aware Theming</h3>
+            <p class="card-text">
+              Engineered with modern CSS <code>color-scheme</code> standards and Vercel design principles. The clock automatically aligns with your device's Dark or Light OS preference, prevents flash of unstyled content (FOUC), and transitions fluidly through the View Transitions API when manually flipped.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </div>
+            <h3 class="card-title">Synthesized Web Audio Acoustics</h3>
+            <p class="card-text">
+              The optional hourly chime synthesizes warm, harmonic sine waves in real time directly inside your browser through the native Web Audio API (D5 to A5 dual resonant chords). It requires zero audio files to download, uses minimal memory, and plays without playback lag.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Section 3: Targeted Keywords & Use Cases -->
+      <div class="knowledge-block" id="useCasesSection">
+        <div class="block-header">
+          <span class="block-tag">UTILITY & APPLICATIONS</span>
+          <h2 class="block-title">The Universal Digital Clock for Any Screen</h2>
+          <p class="block-subtitle">Engineered for desk setups, professional workflows, and continuous ambient display.</p>
+        </div>
+
+        <div class="use-case-grid">
+          <div class="use-case-item">
+            <h4>Online Clock for Focus & Study</h4>
+            <p>
+              An essential <strong>online clock</strong> for Pomodoro study sessions, deep work sprints, coding, and remote examinations. Clean high-contrast Geist Mono tabular numerals eliminate distractions while keeping time in clear sight.
+            </p>
+          </div>
+          <div class="use-case-item">
+            <h4>Internet Clock for Global Coordination</h4>
+            <p>
+              Coordinate global projects across dispersed timezones with this <strong>internet clock</strong>. Track time in New York, London, New Delhi, Tokyo, and Sydney simultaneously without mental conversion mistakes.
+            </p>
+          </div>
+          <div class="use-case-item">
+            <h4>Ambient Fullscreen Clock Display</h4>
+            <p>
+              Turn spare monitors, tablets, smart displays, or living room TVs into a sleek <strong>full screen clock</strong>. Press <kbd>F</kbd> to hide all controls and display only the oversized clock digits and current date.
+            </p>
+          </div>
+          <div class="use-case-item">
+            <h4>Accurate Web Clock with Day Progress</h4>
+            <p>
+              This precision <strong>web clock</strong> calculates your real-time day elapsed progress percentage down to 0.1%, giving you a tangible visual rhythm to organize daily meetings, milestones, and resting periods.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: People Also Ask (FAQ) -->
+      <div class="knowledge-block" id="faqSection">
+        <div class="block-header">
+          <span class="block-tag">PEOPLE ALSO ASK</span>
+          <h2 class="block-title">People Also Ask — Questions & Answers</h2>
+          <p class="block-subtitle">Direct, verified answers to top questions regarding online clocks, fullscreen mode, display options, and device integration.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- 1. Can I see live time in full screen? -->
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>Can I see live time in full screen?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. On Online clock (<a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a>), click the fullscreen button in the upper-right corner of the clock card or press the <kbd>F</kbd> key on your keyboard. The interface expands into an immersive full-screen display showing large, live-updating hours, minutes, seconds, and the current date while automatically hiding all distractions and toolbars.</p>
+            </div>
+          </details>
+
+          <!-- 2. How to display a digital clock on screen? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How to display a digital clock on screen?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>To display a digital clock on your screen, navigate to <a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a> in any modern web browser. The clock instantly renders live, drift-free local time with no download or setup required, and can be expanded into fullscreen or pinned in a browser tab.</p>
+            </div>
+          </details>
+
+          <!-- 3. How do I make my clock big on my home screen? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How do I make my clock big on my home screen?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>You can install Online clock as a Progressive Web App (PWA). On Android, open <a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a> in Chrome, tap the menu (⋮), and select <strong>"Install app"</strong> or <strong>"Add to Home screen"</strong>. On iPhone or iPad, tap the Share button in Safari and select <strong>"Add to Home Screen"</strong>. Opening it from your home screen launches an oversized, edge-to-edge digital clock without browser bars.</p>
+            </div>
+          </details>
+
+          <!-- 4. How to make a timer full screen? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How to make a timer full screen?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>To view time or your reference clock in full screen on Online clock, press <kbd>F</kbd> on your keyboard or click the fullscreen icon on the upper-right corner of the clock card. On mobile or tablet devices, tap the fullscreen icon or rotate your device to landscape orientation for an uninterrupted full-screen experience.</p>
+            </div>
+          </details>
+
+          <!-- 5. Is there a full screen clock app for Android? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Is there a full screen clock app for Android?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. Online clock is fully optimized as an installable PWA for Android. Visit <a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a> in Chrome, tap <strong>"Install app"</strong>, and launch it directly from your Android home screen or app drawer for a lightweight, ad-free full-screen clock with automatic Dark and Light themes.</p>
+            </div>
+          </details>
+
+          <!-- 6. How can I display a clock on my screen? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How can I display a clock on my screen?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Open <a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a> in your web browser. You can pin the browser tab, place it side-by-side with other apps, or press <kbd>F</kbd> to make it full screen. It supports 12H/24H formats, seconds toggling, and 6 global reference timezones.</p>
+            </div>
+          </details>
+
+          <!-- 7. How to change clock display on screen? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How to change clock display on screen?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Use the quick controls toolbar below the clock: toggle 12H / 24H by clicking the format buttons or pressing <kbd>Space</kbd>, toggle Seconds display with the switch or pressing <kbd>S</kbd>, switch between Light and Dark themes with the sun/moon button or pressing <kbd>T</kbd>, and select different timezones using the timezone chips.</p>
+            </div>
+          </details>
+
+          <!-- 8. How can I display a clock on my PC screen? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How can I display a clock on my PC screen?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Open <a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a> on your Windows, Mac, or Linux computer. For a full-screen ambient display, press <kbd>F</kbd> (or <kbd>F11</kbd> in your browser). You can also click the install icon in your browser address bar to install it as a standalone desktop app.</p>
+            </div>
+          </details>
+
+          <!-- 9. What is a digital clock display? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What is a digital clock display?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>A digital clock display is an electronic visual representation of time that displays time numerically (such as 12:45:00 PM) rather than through rotating physical hands on a dial. Online clock uses tabular monospaced Geist Mono typography to ensure numerals remain stable without digit shaking.</p>
+            </div>
+          </details>
+
+          <!-- 10. Where can I find a digital clock online with seconds? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Where can I find a digital clock online with seconds?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Visit Online clock at <a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a>, which features a live, millisecond-accurate seconds display separated by pulsing colons. You can easily toggle seconds on or off anytime using the Seconds switch or by pressing <kbd>S</kbd> on your keyboard.</p>
+            </div>
+          </details>
+
+          <!-- 11. What is the best full-screen timer for studying? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What is the best full-screen timer for studying?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Online clock is ideal for study and focus sessions. It features a clean, high-contrast monochrome design based on Vercel aesthetics, eliminates all banner ads and trackers, includes an optional hourly chime, tracks the percentage of day elapsed, and expands into a distraction-free fullscreen view with a single keypress (<kbd>F</kbd>).</p>
+            </div>
+          </details>
+
+          <!-- 12. What is a large digital countdown clock? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What is a large digital countdown clock?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>A large digital clock or countdown timer displays hours, minutes, and seconds in oversized typography visible across a room. Online clock functions as an ambient large digital clock with a Day Elapsed progress meter that tracks the percentage of the 24-hour cycle completed in real time.</p>
+            </div>
+          </details>
+
+          <!-- 13. Where can I find a full screen online time display? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Where can I find a full screen online time display?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Visit <a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a> and press <kbd>F</kbd> or click the fullscreen icon. It provides an oversized full-screen online time display with zero ads, automatic timezone detection, and clean aesthetic typography suitable for secondary monitors, TV dashboards, and desk docks.</p>
+            </div>
+          </details>
+
+          <!-- 14. How to show digital clock on screen? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How to show digital clock on screen?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Navigate to <a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a> in any modern web browser on your computer, tablet, or phone. The clock immediately displays your local time without requiring sign-in or configuration. You can customize between 12-hour AM/PM and 24-hour military time, show or hide seconds, and switch themes.</p>
+            </div>
+          </details>
+
+          <!-- 15. How to get a clock to display seconds? -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How to get a clock to display seconds?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>On Online clock (<a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a>), seconds are displayed by default in a dedicated box. You can toggle the seconds display on or off at any time by pressing the <kbd>S</kbd> key on your keyboard or by clicking the 'Seconds' toggle switch in the toolbar beneath the clock face.</p>
+            </div>
+          </details>
+
+          <!-- 16. Technical precision -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What makes this online clock more accurate than standard web timers?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Most standard web clocks rely on JavaScript <code>setInterval(..., 1000)</code>, which drifts significantly due to browser garbage collection, background tab throttling, and CPU scheduling. Online clock utilizes a high-frequency <code>requestAnimationFrame</code> loop that directly samples your operating system's hardware clock on every frame. Because your device regularly synchronizes with Network Time Protocol (NTP) atomic servers, Online clock renders the exact true time down to the millisecond without drift.</p>
+            </div>
+          </details>
+
+          <!-- 17. Offline support -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Does this digital web clock work offline without an active internet connection?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. Online clock executes 100% client-side in your web browser. Once loaded into memory, all time computations, timezone conversions, audio synthesis, and visual transitions run locally on your device without sending any network requests. You can continue using it smoothly even on flights, in offline cabins, or during network outages.</p>
+            </div>
+          </details>
+
+          <!-- 18. Auto timezone identification -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How does Online clock automatically identify my device timezone?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>The app queries the native ECMAScript Internationalization API (<code>Intl.DateTimeFormat().resolvedOptions().timeZone</code>). This reads the IANA timezone configured in your operating system (such as <code>Asia/Kolkata</code>, <code>America/New_York</code>, or <code>Europe/London</code>) immediately upon arrival. No location permissions are requested, and your IP address is never used or tracked.</p>
+            </div>
+          </details>
+
+          <!-- 19. Identity & Company Attribution -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Who developed Online clock and what is Prometrion?</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Online clock is developed by <a href="https://www.rajnikantg.in/" target="_blank" rel="noopener noreferrer" class="seo-link">Rajnikant Gaurav</a> and published by <a href="https://www.prometrion.com/" target="_blank" rel="noopener noreferrer" class="seo-link">Prometrion</a>, a modern software and technology company dedicated to creating clean, fast, and privacy-respecting software tools. To view the complete product specifications, build numbers, and license details, open the <a href="#about" class="seo-link" id="faqAboutLink">About Prometrion Clock</a> screen.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Section 5: People Also Search For (Related Queries & Discovery) -->
+      <div class="knowledge-block" id="searchClustersSection">
+        <div class="block-header">
+          <span class="block-tag">RELATED DISCOVERY</span>
+          <h2 class="block-title">People Also Search For</h2>
+          <p class="block-subtitle">Explore popular search queries and discover how Online clock delivers an optimal solution for each intent.</p>
+        </div>
+
+        <div class="search-clusters-grid">
+          <!-- 1. Online digital clock full screen aesthetic -->
+          <article class="search-cluster-card">
+            <div class="search-cluster-header">
+              <span class="search-query-badge">AESTHETIC</span>
+              <svg class="search-cluster-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="search-query-title">Online digital clock full screen aesthetic</h3>
+            <p class="search-query-desc">
+              Designed with minimal monochrome Vercel design tokens, pure contrast backgrounds, and Geist Mono typography. Press <kbd>F</kbd> for an ultra-aesthetic desk setup clock that removes all clutter and distraction.
+            </p>
+            <div class="search-query-tags">
+              <span class="search-tag">Minimalist UI</span>
+              <span class="search-tag">Desk Setup</span>
+              <span class="search-tag">Press F</span>
+            </div>
+          </article>
+
+          <!-- 2. How to make online digital clock full screen android -->
+          <article class="search-cluster-card">
+            <div class="search-cluster-header">
+              <span class="search-query-badge">ANDROID</span>
+              <svg class="search-cluster-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="search-query-title">How to make online digital clock full screen android</h3>
+            <p class="search-query-desc">
+              Open <a href="https://www.clock.prometrion.com/" class="seo-link">www.clock.prometrion.com</a> in mobile Chrome, tap the fullscreen icon or rotate to landscape, or tap "Install App" in Chrome settings to run standalone edge-to-edge without browser chrome.
+            </p>
+            <div class="search-query-tags">
+              <span class="search-tag">PWA Ready</span>
+              <span class="search-tag">Standalone</span>
+              <span class="search-tag">Mobile Chrome</span>
+            </div>
+          </article>
+
+          <!-- 3. Online digital clock full screen 12-hour -->
+          <article class="search-cluster-card">
+            <div class="search-cluster-header">
+              <span class="search-query-badge">12-HOUR FORMAT</span>
+              <svg class="search-cluster-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="search-query-title">Online digital clock full screen 12-hour</h3>
+            <p class="search-query-desc">
+              Toggle 12-hour mode with a dedicated glowing AM/PM unit box matching the clock card digit styling. Press <kbd>Space</kbd> or click 12H in the toolbar anytime for effortless 12-hour cycle display.
+            </p>
+            <div class="search-query-tags">
+              <span class="search-tag">AM/PM Box</span>
+              <span class="search-tag">12H Mode</span>
+              <span class="search-tag">Press Space</span>
+            </div>
+          </article>
+
+          <!-- 4. Digital clock online -->
+          <article class="search-cluster-card">
+            <div class="search-cluster-header">
+              <span class="search-query-badge">WEB UTILITY</span>
+              <svg class="search-cluster-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="search-query-title">Digital clock online</h3>
+            <p class="search-query-desc">
+              Direct access from any web browser without installation, logins, or paywalls. Features automatic device timezone detection, live day elapsed bar, and world time quick jumps across 6 international hubs.
+            </p>
+            <div class="search-query-tags">
+              <span class="search-tag">No Login</span>
+              <span class="search-tag">Instant Load</span>
+              <span class="search-tag">Zero Ads</span>
+            </div>
+          </article>
+
+          <!-- 5. Big clock Display digital -->
+          <article class="search-cluster-card">
+            <div class="search-cluster-header">
+              <span class="search-query-badge">DISPLAY SIZE</span>
+              <svg class="search-cluster-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="search-query-title">Big clock Display digital</h3>
+            <p class="search-query-desc">
+              Oversized tabular numbers scale dynamically to your viewport using responsive sizing. High readability from across the room, whether placed on an iPad stand or an external 4K monitor.
+            </p>
+            <div class="search-query-tags">
+              <span class="search-tag">Oversized Digits</span>
+              <span class="search-tag">Dynamic Scaling</span>
+              <span class="search-tag">Tabular Mono</span>
+            </div>
+          </article>
+
+          <!-- 6. Full screen clock for study -->
+          <article class="search-cluster-card">
+            <div class="search-cluster-header">
+              <span class="search-query-badge">STUDY & WORK</span>
+              <svg class="search-cluster-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="search-query-title">Full screen clock for study</h3>
+            <p class="search-query-desc">
+              Keep time in sight during deep work sprints, Pomodoro routines, and exam preparation. Zero ads, zero popups, and optional acoustic hourly chimes to mark time without checking distracting phones.
+            </p>
+            <div class="search-query-tags">
+              <span class="search-tag">Focus Mode</span>
+              <span class="search-tag">Hourly Chime</span>
+              <span class="search-tag">Zero Distractions</span>
+            </div>
+          </article>
+
+          <!-- 7. Full screen digital clock free download -->
+          <article class="search-cluster-card">
+            <div class="search-cluster-header">
+              <span class="search-query-badge">OFFLINE APP</span>
+              <svg class="search-cluster-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="search-query-title">Full screen digital clock free download</h3>
+            <p class="search-query-desc">
+              No bloated app store installer needed. Online clock works as a zero-cost Progressive Web App (PWA). Click the browser install icon or "Add to Home Screen" to install a 100% offline, native-like app in seconds.
+            </p>
+            <div class="search-query-tags">
+              <span class="search-tag">Free Forever</span>
+              <span class="search-tag">PWA Install</span>
+              <span class="search-tag">100% Offline</span>
+            </div>
+          </article>
+
+          <!-- 8. Digital Clock display -->
+          <article class="search-cluster-card">
+            <div class="search-cluster-header">
+              <span class="search-query-badge">PRECISION</span>
+              <svg class="search-cluster-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="search-query-title">Digital Clock display</h3>
+            <p class="search-query-desc">
+              Comprehensive digital clock display engineered with hardware-synced requestAnimationFrame timing, pulsing colons, day progress percentage, full humanized calendar date, and instant theme toggling.
+            </p>
+            <div class="search-query-tags">
+              <span class="search-tag">Drift-Free</span>
+              <span class="search-tag">Hardware Sync</span>
+              <span class="search-tag">Day Progress</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Section 5: Privacy Policy & Zero Data Collection Guarantee -->
+      <div class="knowledge-block" id="privacySection">
+        <div class="block-header">
+          <span class="block-tag">PRIVACY & TRUST</span>
+          <h2 class="block-title">Privacy Policy & Security Guarantee</h2>
+          <p class="block-subtitle">100% private, client-side execution with zero data collection.</p>
+        </div>
+
+        <div class="privacy-card">
+          <div class="privacy-header">
+            <div class="privacy-shield-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h3 class="privacy-title">Absolute Privacy by Design</h3>
+              <p class="privacy-subtitle">Effective Date: October 2026 • Domain: www.clock.prometrion.com</p>
+            </div>
+          </div>
+
+          <div class="privacy-points-grid">
+            <div class="privacy-point">
+              <div class="point-check">✓</div>
+              <div>
+                <strong>Zero Personal Data Collected</strong>
+                <p>We do not collect, request, log, or store your name, email, location coordinates, IP address, or device identifiers.</p>
+              </div>
+            </div>
+
+            <div class="privacy-point">
+              <div class="point-check">✓</div>
+              <div>
+                <strong>No Tracking Cookies or Ad SDKs</strong>
+                <p>Online clock contains zero marketing pixels, zero third-party analytics trackers (no Google Analytics, no Meta Pixel), and no advertising cookies.</p>
+              </div>
+            </div>
+
+            <div class="privacy-point">
+              <div class="point-check">✓</div>
+              <div>
+                <strong>Strict Local Client-Side Execution</strong>
+                <p>All time calculations, timezone switches, audio synthesizers, and theme choices are processed strictly within your local browser sandbox.</p>
+              </div>
+            </div>
+
+            <div class="privacy-point">
+              <div class="point-check">✓</div>
+              <div>
+                <strong>Encrypted HTTPS Delivery</strong>
+                <p>Delivered via encrypted HTTPS with strict transport security (HSTS), Content Security Policy, and modern cache optimization.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="privacy-footer-note">
+            <p>
+              Prometrion is built on the belief that essential digital utilities should respect your focus, security, and human dignity. Questions regarding our architecture can be directed through <a href="https://www.prometrion.com/" target="_blank" rel="noopener noreferrer" class="seo-link">Prometrion Software & Technology</a> or the developer portfolio at <a href="https://www.rajnikantg.in/" target="_blank" rel="noopener noreferrer" class="seo-link">rajnikantg.in</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 6: Knowledge Screen Bottom Bar & Back to Top -->
+      <div class="knowledge-bottom-bar">
+        <div class="bottom-brand-info">
+          <div class="prometrion-branding-block">
+            <p class="brand-attribution">
+              A Product of <a href="https://www.prometrion.com/" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>Prometrion</strong></a>
+            </p>
+            <p class="dev-attribution">
+              Built with 💻 & ☕. By <a href="https://www.rajnikantg.in/" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>Rajnikant Gaurav</strong></a>
+            </p>
+          </div>
+          <p class="bottom-copyright" id="bottomCopyrightText">© 2026 Prometrion. All rights reserved.</p>
+        </div>
+
+        <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to clock top">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+          <span>Back to Clock</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Reusable Universal About Screen Modal Dialog -->
+  <dialog id="aboutDialog" class="about-dialog" aria-label="About Online clock">
+    <!-- Populated dynamically via AppInfo.getAboutDialogHTML() -->
+  </dialog>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="app-info.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
