@@ -822,47 +822,6 @@ kbd {
 }
 
 /* --------------------------------------------------------------------------
-   Screen Bottom Navigation Hint (Under Clock Card)
-   -------------------------------------------------------------------------- */
-.clock-screen-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1rem;
-}
-
-.explore-guide-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.4rem 0.9rem;
-  border-radius: var(--radius-full);
-  background: var(--control-bg);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-secondary);
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.explore-guide-link:hover {
-  background: var(--control-active);
-  color: var(--text-primary);
-  border-color: var(--border-strong);
-  transform: translateY(2px);
-}
-
-.explore-guide-link svg {
-  transition: transform 0.2s ease;
-}
-
-.explore-guide-link:hover svg {
-  transform: translateY(2px);
-}
-
-/* --------------------------------------------------------------------------
    Standard Prometrion Universal Footer at Very Bottom (Section 10)
    -------------------------------------------------------------------------- */
 .app-footer {
@@ -1364,8 +1323,6 @@ html.is-fullscreen .controls-toolbar,
 html.is-fullscreen .app-header,
 :fullscreen .app-footer,
 html.is-fullscreen .app-footer,
-:fullscreen .clock-screen-footer,
-html.is-fullscreen .clock-screen-footer,
 :fullscreen .knowledge-screen,
 html.is-fullscreen .knowledge-screen {
   display: none !important;
