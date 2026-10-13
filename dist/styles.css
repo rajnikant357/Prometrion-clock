@@ -247,7 +247,8 @@ html, body {
   gap: 0.75rem;
 }
 
-.prometrion-logo-wrapper {
+.prometrion-logo-wrapper,
+.clock-logo-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,13 +265,15 @@ html, body {
   user-select: none;
 }
 
-.prometrion-logo-wrapper:hover {
+.prometrion-logo-wrapper:hover,
+.clock-logo-wrapper:hover {
   transform: scale(1.06);
   border-color: var(--border-strong);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
 }
 
-.prometrion-logo-img {
+.prometrion-logo-img,
+.clock-logo-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -819,17 +822,66 @@ kbd {
 }
 
 /* --------------------------------------------------------------------------
-   Standard Prometrion Universal Footer (Section 10)
+   Screen Bottom Navigation Hint (Under Clock Card)
+   -------------------------------------------------------------------------- */
+.clock-screen-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.explore-guide-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-full);
+  background: var(--control-bg);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.explore-guide-link:hover {
+  background: var(--control-active);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+  transform: translateY(2px);
+}
+
+.explore-guide-link svg {
+  transition: transform 0.2s ease;
+}
+
+.explore-guide-link:hover svg {
+  transform: translateY(2px);
+}
+
+/* --------------------------------------------------------------------------
+   Standard Prometrion Universal Footer at Very Bottom (Section 10)
    -------------------------------------------------------------------------- */
 .app-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1.5rem;
+  padding-top: 2.5rem;
+  margin-top: 3.5rem;
+  border-top: 1px solid var(--border-subtle);
   font-size: 0.78rem;
   color: var(--text-secondary);
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.footer-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
 }
 
 .footer-branding {
@@ -852,7 +904,20 @@ kbd {
   line-height: 1.4;
 }
 
+.prometrion-inline-logo {
+  display: inline-block;
+  vertical-align: -2.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  margin-right: 5px;
+  object-fit: contain;
+  transition: transform 0.15s ease;
+}
+
 .prometrion-link {
+  display: inline-flex;
+  align-items: center;
   color: var(--text-primary);
   text-decoration: none;
   font-weight: 600;
@@ -864,10 +929,33 @@ kbd {
   opacity: 0.85;
 }
 
+.prometrion-link:hover .prometrion-inline-logo,
+.footer-brand-link:hover .prometrion-inline-logo,
+.about-nav-link:hover .prometrion-inline-logo {
+  transform: scale(1.15);
+}
+
+.footer-brand-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footer-brand-link:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
 .footer-right {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.65rem;
+  flex-wrap: wrap;
 }
 
 .footer-about-link,
@@ -1276,6 +1364,8 @@ html.is-fullscreen .controls-toolbar,
 html.is-fullscreen .app-header,
 :fullscreen .app-footer,
 html.is-fullscreen .app-footer,
+:fullscreen .clock-screen-footer,
+html.is-fullscreen .clock-screen-footer,
 :fullscreen .knowledge-screen,
 html.is-fullscreen .knowledge-screen {
   display: none !important;

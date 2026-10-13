@@ -31,7 +31,8 @@ const rootFiles = [
   'sitemap.xml',
   'vercel.json',
   'prometrion-logo.png',
-  'prometrion-logo.svg'
+  'prometrion-logo.svg',
+  'favicon.ico'
 ];
 
 let copiedCount = 0;
@@ -48,8 +49,11 @@ for (const file of rootFiles) {
 }
 
 // 3. Ensure favicon.ico exists in dist root for direct browser requests
+const faviconSrc = path.join(PUBLIC_DIR, 'favicon.ico');
 const logoPngSrc = path.join(ROOT_DIR, 'prometrion-logo.png');
-if (fs.existsSync(logoPngSrc)) {
+if (fs.existsSync(faviconSrc)) {
+  fs.copyFileSync(faviconSrc, path.join(DIST_DIR, 'favicon.ico'));
+} else if (fs.existsSync(logoPngSrc)) {
   fs.copyFileSync(logoPngSrc, path.join(DIST_DIR, 'favicon.ico'));
 }
 

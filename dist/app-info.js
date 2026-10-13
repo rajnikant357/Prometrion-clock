@@ -12,7 +12,7 @@ const AppInfo = {
   COMPANY_URL: "https://www.prometrion.com/",
   DEVELOPER_NAME: "Rajnikant Gaurav",
   DEVELOPER_URL: "https://www.rajnikantg.in/",
-  ICON_SRC: "public/Prometrion%20logo2.png",
+  ICON_SRC: "public/clock-logo.png",
 
   get COPYRIGHT() {
     return `© ${new Date().getFullYear()} Prometrion. All rights reserved.`;
@@ -27,7 +27,7 @@ const AppInfo = {
     return `
       <div class="prometrion-branding-block">
         <p class="brand-attribution">
-          A Product of <a href="${this.COMPANY_URL}" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>${this.COMPANY_NAME}</strong></a>
+          A Product of <a href="${this.COMPANY_URL}" target="_blank" rel="noopener noreferrer" class="prometrion-link"><img src="public/Prometrion%20logo2.png" alt="Prometrion Logo" class="prometrion-inline-logo" width="16" height="16"><strong>${this.COMPANY_NAME}</strong></a>
         </p>
         <p class="dev-attribution">
           Built with 💻 & ☕. By <a href="${this.DEVELOPER_URL}" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>${this.DEVELOPER_NAME}</strong></a>
@@ -69,7 +69,7 @@ const AppInfo = {
 
         <div class="about-attribution-section">
           <p class="about-product-of">
-            A Product of <a href="${this.COMPANY_URL}" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>${this.COMPANY_NAME}</strong></a>
+            A Product of <a href="${this.COMPANY_URL}" target="_blank" rel="noopener noreferrer" class="prometrion-link"><img src="public/Prometrion%20logo2.png" alt="Prometrion Logo" class="prometrion-inline-logo" width="16" height="16"><strong>${this.COMPANY_NAME}</strong></a>
           </p>
           <p class="about-built-by">
             Built with 💻 & ☕. By <a href="${this.DEVELOPER_URL}" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>${this.DEVELOPER_NAME}</strong></a>
@@ -77,6 +77,7 @@ const AppInfo = {
           
           <div class="about-nav-links">
             <a href="${this.COMPANY_URL}" target="_blank" rel="noopener noreferrer" class="about-nav-link">
+              <img src="public/Prometrion%20logo2.png" alt="Prometrion Logo" class="prometrion-inline-logo" width="14" height="14">
               <span>${this.COMPANY_NAME}</span>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
             </a>

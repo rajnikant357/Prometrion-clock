@@ -68,8 +68,9 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
 
   <!-- Icons & Web App Manifest -->
-  <link rel="icon" type="image/png" href="public/Prometrion%20logo2.png">
-  <link rel="apple-touch-icon" href="public/Prometrion%20logo2.png">
+  <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+  <link rel="shortcut icon" href="public/favicon.ico">
+  <link rel="apple-touch-icon" href="public/favicon-64.png">
   <link rel="manifest" href="manifest.json">
   
   <!-- Modern color-scheme standard -->
@@ -371,12 +372,12 @@
   <div class="ambient-glow" aria-hidden="true"></div>
 
   <div class="app-container">
-    <!-- Header with Prometrion Brand & Theme Toggle -->
+    <!-- Header with Online clock Brand & Theme Toggle -->
     <header class="app-header">
       <div class="header-brand">
-        <!-- Prometrion Logo from public folder -->
-        <div class="prometrion-logo-wrapper" aria-label="Prometrion logo">
-          <img src="public/Prometrion%20logo2.png" alt="Prometrion Logo" class="prometrion-logo-img" width="24" height="24">
+        <!-- New Clock Logo from public folder -->
+        <div class="clock-logo-wrapper" aria-label="Online clock logo">
+          <img src="public/clock%20logo.ico" alt="Online clock Logo" class="clock-logo-img" width="24" height="24">
         </div>
         <div class="brand-text">
           <span class="brand-title">Online clock</span>
@@ -577,24 +578,13 @@
       </section>
     </main>
 
-    <!-- Standard Prometrion Universal Branding Footer -->
-    <footer class="app-footer">
-      <div class="footer-branding" id="footerBranding">
-        <p class="brand-attribution">
-          A Product of <a href="https://www.prometrion.com/" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>Prometrion</strong></a>
-        </p>
-        <p class="dev-attribution">
-          Built with 💻 & ☕. By <a href="https://www.rajnikantg.in/" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>Rajnikant Gaurav</strong></a>
-        </p>
-      </div>
-      <div class="footer-right">
-        <button type="button" class="footer-about-link" id="footerAboutBtn">About</button>
-        <span class="footer-separator">•</span>
-        <a href="#knowledgeScreen" class="footer-details-link" id="footerExploreLink">Guide & FAQ ↓</a>
-        <span class="footer-separator">•</span>
-        <span class="footer-status" id="activeThemeInfo">System theme</span>
-      </div>
-    </footer>
+    <!-- Screen Bottom Navigation to Guide & Documentation -->
+    <div class="clock-screen-footer">
+      <a href="#knowledgeScreen" class="explore-guide-link" id="footerExploreLink">
+        <span>Guide & FAQ</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+    </div>
   </div>
 
   <!-- Screen revealed when scrolled all the way beneath the footer -->
@@ -1137,25 +1127,38 @@
         </div>
       </div>
 
-      <!-- Section 6: Knowledge Screen Bottom Bar & Back to Top -->
-      <div class="knowledge-bottom-bar">
-        <div class="bottom-brand-info">
-          <div class="prometrion-branding-block">
-            <p class="brand-attribution">
-              A Product of <a href="https://www.prometrion.com/" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>Prometrion</strong></a>
-            </p>
-            <p class="dev-attribution">
-              Built with 💻 & ☕. By <a href="https://www.rajnikantg.in/" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>Rajnikant Gaurav</strong></a>
-            </p>
+      <!-- Standard Prometrion Universal Branding Footer at Very Bottom of Page -->
+      <footer class="app-footer" id="appFooter">
+        <div class="footer-left-col">
+          <div class="footer-branding" id="footerBranding">
+            <div class="prometrion-branding-block">
+              <p class="brand-attribution">
+                A Product of <a href="https://www.prometrion.com/" target="_blank" rel="noopener noreferrer" class="prometrion-link"><img src="public/Prometrion%20logo2.png" alt="Prometrion Logo" class="prometrion-inline-logo" width="16" height="16"><strong>Prometrion</strong></a>
+              </p>
+              <p class="dev-attribution">
+                Built with 💻 & ☕. By <a href="https://www.rajnikantg.in/" target="_blank" rel="noopener noreferrer" class="prometrion-link"><strong>Rajnikant Gaurav</strong></a>
+              </p>
+            </div>
           </div>
           <p class="bottom-copyright" id="bottomCopyrightText">© 2026 Prometrion. All rights reserved.</p>
         </div>
 
-        <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to clock top">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
-          <span>Back to Clock</span>
-        </button>
-      </div>
+        <div class="footer-right">
+          <a href="https://www.prometrion.com/" target="_blank" rel="noopener noreferrer" class="footer-brand-link" title="Visit Prometrion">
+            <img src="public/Prometrion%20logo2.png" alt="Prometrion Logo" class="prometrion-inline-logo" width="16" height="16">
+            <span>Prometrion</span>
+          </a>
+          <span class="footer-separator">•</span>
+          <button type="button" class="footer-about-link" id="footerAboutBtn">About</button>
+          <span class="footer-separator">•</span>
+          <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to clock top">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+            <span>Back to Clock</span>
+          </button>
+          <span class="footer-separator">•</span>
+          <span class="footer-status" id="activeThemeInfo">System theme</span>
+        </div>
+      </footer>
 
     </div>
   </section>

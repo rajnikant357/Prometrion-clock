@@ -17,13 +17,13 @@
   ],
   "icons": [
     {
-      "src": "public/Prometrion%20logo2.png",
+      "src": "public/clock-logo-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "public/Prometrion%20logo2.png",
+      "src": "public/clock-logo-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -37,7 +37,7 @@
       "url": "/?mode=fullscreen",
       "icons": [
         {
-          "src": "public/Prometrion%20logo2.png",
+          "src": "public/clock-logo-192.png",
           "sizes": "192x192",
           "type": "image/png"
         }
@@ -47,10 +47,10 @@
       "name": "World Timezones",
       "short_name": "Timezones",
       "description": "View global reference timezones",
-      "url": "/#moreDetails",
+      "url": "/#knowledgeScreen",
       "icons": [
         {
-          "src": "public/Prometrion%20logo2.png",
+          "src": "public/clock-logo-192.png",
           "sizes": "192x192",
           "type": "image/png"
         }
