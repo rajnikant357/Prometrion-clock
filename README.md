@@ -1,6 +1,6 @@
-# ⏱️ Online clock — Prometrion
+# ⏱️ Online Clock — Digital Clock & World Digital Clock (Prometrion)
 
-An ultra-refined, high-precision digital clock built with **modern web standards** and **Vercel's signature design system** (Geist typography, crisp monochrome palette, subtle glassmorphism, responsive dot matrix background), featuring the official **Prometrion** identity, **Universal App Branding & About System**, and full **SEO, OpenGraph, PWA, and GEO metadata**.
+An ultra-refined, high-precision web clock built with **modern web standards** and **Vercel's signature design system** (Geist typography, crisp monochrome palette, subtle glassmorphism, responsive dot matrix background), featuring the official **Prometrion** identity, **Universal App Branding & About System**, and full **SEO, OpenGraph, PWA, and GEO metadata** for three core pillars: **Online Clock**, **Digital Clock**, and **World Digital Clock**.
 
 🌐 **Production Website**: [www.clock.prometrion.com](https://www.clock.prometrion.com/)  
 🏢 **Parent Company**: [Prometrion](https://www.prometrion.com/)  
@@ -12,7 +12,7 @@ An ultra-refined, high-precision digital clock built with **modern web standards
 
 ```text
 App Name:          Online clock
-App Description:   A precision digital clock with dark and light theme toggle across global timezones.
+App Description:   Precision online clock, modern digital clock, and live world digital clock across global timezones.
 Domain:            https://www.clock.prometrion.com/
 Version:           1.0.0
 Build Number:      1
@@ -62,25 +62,34 @@ Copyright:         © 2026 Prometrion. All rights reserved.
 
 ---
 
-## 🔍 SEO, OpenGraph & PWA Specifications
+## 🔍 SEO, GEO & Keyword Implementation
 
+The website is optimized for Search Engine Optimization (SEO), Generative Engine Optimization (GEO for AI search engines like ChatGPT, Gemini, and Perplexity), and Geographic Search Visibility:
+
+### 🎯 The 3 Core Topics & Keywords:
+1. **Online clock**: Real-time browser clock running at native display refresh rates.
+   - *Improvised Rhyming Keywords*: `around the clock online clock`, `tick tock online clock`, `rock solid online clock`, `desk dock online clock`, `focus lock online clock`
+2. **digital clock**: Minimalist high-contrast numeric display with tabular digit blocks.
+   - *Improvised Rhyming Keywords*: `tick tock digital clock`, `rock steady digital clock`, `digit block digital clock`, `screen dock digital clock`, `around the clock digital clock`
+3. **world digital clock**: Multi-region international time engine tracking global reference hubs.
+   - *Improvised Rhyming Keywords*: `around the clock world digital clock`, `global dock world digital clock`, `non stop world digital clock`, `unlock world digital clock`, `city block world digital clock`
+
+### 🌍 GEO & Metadata Architecture:
 - **Canonical URL**: `https://www.clock.prometrion.com/`
-- **OpenGraph**: Complete `og:title`, `og:description`, `og:url`, `og:image`, `og:image:secure_url`, `og:image:width`, `og:image:height`, `og:locale`, and alternate locales.
-- **Twitter Cards**: `summary_large_image` with domain verification.
-- **PWA Web App Manifest**: [`manifest.json`](manifest.json) configured for standalone mobile and desktop installation.
-- **Robots & Sitemap**:
-  - [`robots.txt`](robots.txt)
-  - [`sitemap.xml`](sitemap.xml)
-- **Structured Data (Schema.org JSON-LD)**:
-  - `WebSite`
-  - `WebApplication`
-  - `Organization` (Prometrion)
-  - `Person` (Rajnikant Gaurav)
-  - `BreadcrumbList`
-  - `FAQPage` (Google rich snippet accordions in search results)
 - **Geo Meta Tags**:
   - `geo.region`: `US-NY;GB-LND;IN-DL;JP-13;AU-NSW`
-  - `geo.placename`: `Global World Clock (UTC, New York, London, New Delhi, Tokyo, Sydney)`
+  - `geo.placename`: `World Digital Clock Global Hub (UTC, New York, London, New Delhi, Tokyo, Sydney)`
+  - `geo.position`: `51.4934;0.0098`
+  - `ICBM`: `51.4934, 0.0098`
+  - `coverage`: `Worldwide`
+  - `distribution`: `Global`
+- **OpenGraph & Twitter**: Optimized cards with explicit titles and descriptions for all 3 topics.
+- **PWA Web App Manifest**: [`manifest.json`](manifest.json) with dedicated shortcuts for Digital Clock and World Digital Clock.
+- **Robots & Sitemap**: [`robots.txt`](robots.txt) & [`sitemap.xml`](sitemap.xml).
+- **Structured Data (Schema.org JSON-LD)**:
+  - `WebSite` & `WebApplication` with spatial coverage and entity definitions.
+  - `Organization` (Prometrion) & `Person` (Rajnikant Gaurav).
+  - `FAQPage` rich snippets addressing the 3 core topics and device usage.
 
 ---
 

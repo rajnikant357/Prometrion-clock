@@ -1,8 +1,8 @@
 {
   "id": "com.prometrion.clock",
-  "name": "Online clock — Prometrion",
-  "short_name": "Online clock",
-  "description": "Free precision online digital clock with real-time world timezones, dark and light theme toggle, fullscreen ambient mode, and hourly chime. 100% private.",
+  "name": "Online Clock — Digital Clock & World Digital Clock",
+  "short_name": "Online Clock",
+  "description": "Precision online clock, modern digital clock, and live world digital clock across global timezones. Accurate around the clock with zero data tracking. 100% private.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -31,9 +31,9 @@
   ],
   "shortcuts": [
     {
-      "name": "Fullscreen Clock",
-      "short_name": "Fullscreen",
-      "description": "Launch Online clock in ambient fullscreen view",
+      "name": "Fullscreen Digital Clock",
+      "short_name": "Digital Clock",
+      "description": "Launch Online digital clock in ambient fullscreen view",
       "url": "/?mode=fullscreen",
       "icons": [
         {
@@ -44,10 +44,10 @@
       ]
     },
     {
-      "name": "World Timezones",
-      "short_name": "Timezones",
-      "description": "View global reference timezones",
-      "url": "/#knowledgeScreen",
+      "name": "World Digital Clock",
+      "short_name": "World Clock",
+      "description": "View global reference timezones and international hubs",
+      "url": "/#topicsComparisonSection",
       "icons": [
         {
           "src": "public/clock-logo-192.png",

@@ -1986,3 +1986,64 @@ html.is-fullscreen .knowledge-screen {
   }
 }
 
+/* --------------------------------------------------------------------------
+   Geo Table & Specifications Container (Vercel Minimalist Table Design)
+   -------------------------------------------------------------------------- */
+.geo-table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--card-inner);
+}
+
+.geo-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.geo-table th,
+.geo-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+}
+
+.geo-table th {
+  background: var(--control-bg);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.geo-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.geo-table tbody tr:hover td {
+  background: rgba(125, 125, 125, 0.04);
+}
+
+.geo-table td strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.geo-table td code {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  background: var(--control-bg);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+
+

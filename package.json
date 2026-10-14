@@ -1,7 +1,7 @@
 {
   "name": "online-clock",
   "version": "1.0.0",
-  "description": "Online clock — A precision digital clock with dark and light theme toggle across global timezones. A Product of Prometrion.",
+  "description": "Online clock — Precision digital clock and world digital clock across global timezones. Accurate around the clock. A Product of Prometrion.",
   "homepage": "https://www.clock.prometrion.com/",
   "scripts": {
     "build": "node build.js",
@@ -12,17 +12,18 @@
   "keywords": [
     "online-clock",
     "digital-clock",
+    "world-digital-clock",
+    "around-the-clock",
+    "rock-steady-clock",
+    "desk-dock-clock",
     "clock",
     "internet-clock",
     "clock-online",
     "web-clock",
-    "clock-website",
     "world-clock",
     "prometrion",
     "rajnikant-gaurav",
-    "fullscreen-clock",
-    "dark-mode",
-    "light-mode"
+    "fullscreen-clock"
   ],
   "author": "Rajnikant Gaurav <https://www.rajnikantg.in/>",
   "publisher": "Prometrion <https://www.prometrion.com/>",

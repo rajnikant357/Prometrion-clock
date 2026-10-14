@@ -5,7 +5,7 @@
 
 const AppInfo = {
   APP_NAME: "Online clock",
-  DESCRIPTION: "A precision digital clock with dark and light theme toggle across global timezones.",
+  DESCRIPTION: "Precision online clock, modern digital clock, and live world digital clock across global timezones.",
   VERSION: "1.0.0",
   BUILD_NUMBER: "1",
   COMPANY_NAME: "Prometrion",
